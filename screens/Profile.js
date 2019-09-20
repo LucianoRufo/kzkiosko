@@ -1,22 +1,29 @@
-import React, { useEffect } from "react";
+import { get } from "lodash";
+import React from "react";
 import { ScrollView } from "react-native";
+import { NavigationActions } from "react-navigation";
+import { observer } from "mobx-react";
 import styled from "styled-components/native";
 import { Icon, Button, Text } from "react-native-ui-kitten";
 import { getStatusBarHeight } from "react-native-status-bar-height";
+import * as Google from "expo-google-app-auth";
+import * as firebase from "firebase";
 import Container from "../components/Container";
 import PurchasesList from "../components/PurchasesList";
+import authState from "../states/authState";
+import authConfig from "../authConfig";
 
-export default function Profile({ navigation }) {
-  useEffect(() => {}, []);
-
+export default observer(function Profile({ navigation }) {
   return (
     <Container>
       <User>
         <UserName>
           <Icon name="person-outline"></Icon>
-          <Text>Carlitos Pepe</Text>
+          <Text>{get(authState, "user.name", "")}</Text>
         </UserName>
-        <Button size="tiny">Sign Out</Button>
+        <Button onPress={signOut} size="tiny">
+          Sign Out
+        </Button>
       </User>
       <BackButton
         appearance="ghost"
@@ -28,7 +35,16 @@ export default function Profile({ navigation }) {
       </ScrollView>
     </Container>
   );
-}
+
+  async function signOut() {
+    await Google.logOutAsync({
+      accessToken: authState.accessToken,
+      ...authConfig,
+    });
+    firebase.auth().signOut();
+    navigation.reset([NavigationActions.navigate({ routeName: "SignIn" })], 0);
+  }
+});
 
 const User = styled.View`
   padding-vertical: 60px;

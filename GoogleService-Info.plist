@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>87283938323-2dj03sarvscn585m9qgmq77ru0fde9mm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.87283938323-2dj03sarvscn585m9qgmq77ru0fde9mm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRHGcQgilfgOnFNqG5tGw98YO8HlL2x_M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>87283938323</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kzsoftworks.ioskiosko</string>
+	<key>PROJECT_ID</key>
+	<string>kaizen-kiosko</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kaizen-kiosko.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:87283938323:ios:a01b73a02c1057e4323be6</string>
+	<key>DATABASE_URL</key>
+	<string>https://kaizen-kiosko.firebaseio.com</string>
+</dict>
+</plist>

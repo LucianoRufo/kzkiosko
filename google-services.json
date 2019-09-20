@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "87283938323",
+    "firebase_url": "https://kaizen-kiosko.firebaseio.com",
+    "project_id": "kaizen-kiosko",
+    "storage_bucket": "kaizen-kiosko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87283938323:android:7a24468d74d577e1323be6",
+        "android_client_info": {
+          "package_name": "com.kzsoftworks.androidkiosko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87283938323-uboqkn1jqsmg6naibvb857tjeon13kum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP8h0hOTfSOkPkQNpPLN56Rm3b8dJ4S9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87283938323-uboqkn1jqsmg6naibvb857tjeon13kum.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "87283938323-2dj03sarvscn585m9qgmq77ru0fde9mm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kzsoftworks.ioskiosko"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
